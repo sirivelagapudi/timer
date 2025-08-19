@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Georgia', sans-serif;
+			padding: 9px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #F5F5F5;
+			text-decoration: none;
+			text-transform: none;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #191919;
+		}
+
+		.border {
+			border: 2px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> home</a>
+		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-note-sticky"></i> notes</a>
+		<a id="classes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> classes</a>
+		<a id="calendar" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i> calendar</a>
+		<a id="tracker" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-chart-gantt"></i> tracker</a>
+		<a id="personal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-secret"></i> personal</a>
+		<a id="canvas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school"></i> canvas</a>
+		<a id="gdrive" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder-open"></i> gdrive</a>
+		<a id="newpage" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-plus"></i> new page</a>
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/here-we-are-24ece7f358218041950fcdd4c3f2ba5b", '_blank').focus();
+			else if (id == "notes")
+				window.open("https://www.notion.so/24ece7f35821804a807bf01becfec983?v=24ece7f3582180f79cfd000cd5c47309", '_blank').focus();
+			else if (id == "classes")
+				window.open("https://www.notion.so/24ece7f35821804a807bf01becfec983?v=24ece7f3582180f3a2e6000cfa3ff3ed", '_blank').focus();
+			else if (id == "calendar")
+				window.open("https://calendar.google.com/calendar/u/0/r/week",'_blank').focus();
+			else if (id == "tracker")
+				window.open("https://www.notion.so/24ece7f3582181609c95c6cea695d35f?v=24ece7f35821813a98ae000c303a0d7f", '_blank').focus();
+			else if (id == "personal")
+				window.open("https://www.notion.so/24ece7f358218034ac06e7ccee6d0dd0?v=24ece7f3582181fbb3b7000c688af96a", '_blank').focus();
+			else if (id == "canvas")
+				window.open("https://sjsu.instructure.com/", '_blank').focus();
+			else if (id == "gdrive")
+				window.open("https://drive.google.com/drive/u/1/starred", '_blank').focus();
+			else if (id == "newpage")
+				window.open("https://www.notion.so/here-we-are-24ece7f358218041950fcdd4c3f2ba5b?pvs=12", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
