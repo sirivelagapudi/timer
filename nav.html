@@ -36,7 +36,7 @@
 			text-decoration: none;
 			text-transform: none;
 			display: inline-block;
-			padding: 10px;
+			padding: 5px;
 		}
 
 		.background {
@@ -44,13 +44,13 @@
 		}
 
 		.border {
-			border: 0px solid #cccccc;
+			border: 5px solid #cccccc;
 
 		}
 
 		.navMenu a:hover {
 
-			color: #d09c0b;
+			color: #ebfcfb;
 		}
 	</style>
 </head>
@@ -66,7 +66,7 @@
 		<a id="personal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-secret"></i> personal</a>
 		<a id="canvas" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-school"></i> canvas</a>
 		<a id="gdrive" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder-open"></i> gdrive</a>
-		<a id="newpage" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-plus"></i> new page</a>
+		<a id="newpage" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-plus"></i> new</a>
 
 
 
@@ -75,9 +75,9 @@
 
 	<script>
 
-		let direction = "horizontal";
+		let direction = "vertical";
 		if (direction === "vertical") {
-			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:10px; margin-right:10px} .navMenu{margin:3px}</style>`)
 		}
 
 
