@@ -9,8 +9,8 @@
 	<!-- Google Font -->
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 	<!-------->
 
@@ -24,25 +24,19 @@
 
 
 		.navMenu {
-			
-.playfair-display-<uniquifier> {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-			padding: 9px;
+			font-family: 'Saira', sans-serif;
+			padding: 2px;
 			text-align: center;
 			margin: 7px auto;
 			width: fit-content;
 		}
 
 		.navMenu a {
-			color: #F5F5F5;
+			color: #d9dffc;
 			text-decoration: none;
 			text-transform: none;
 			display: inline-block;
-			padding: 6px;
+			padding: 10px;
 		}
 
 		.background {
@@ -50,7 +44,7 @@
 		}
 
 		.border {
-			border: 2px solid #cccccc;
+			border: 0px solid #cccccc;
 
 		}
 
@@ -63,7 +57,7 @@
 
 <body>
 
-	<nav class="navMenu  border">
+	<nav class="navMenu  border background">
 		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> home</a>
 		<a id="notes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-note-sticky"></i> notes</a>
 		<a id="classes" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> classes</a>
